@@ -1,32 +1,108 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Register</title>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <style type="text/css">
+            body{
+                background-color:#59CE8F;
+            }
+            h1{
+                text-align: center;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 35px;
+            }
+            .forms{
+                background-color:white;
+                width:610px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-bottom:20px;
+                border:1px solid ;
+            }
+            .myform{
+                margin-left: 450px;
+            }
+            .nam{
+                
+                padding:10px;
+                margin-bottom:10px;
+            }
+            .but{
+                padding-left:80px;
+            }
+            #sub{
+                background-color:#59CE8F;
+                padding-left:200px;
+                padding-right:190px;
+                padding-top:3px;
+                padding-bottom:3px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            #role{
+                padding:10px;
+                padding-right:470px;
+            }
+            .first{
+                margin-top:10px;
+                padding:10px;
+            }
+            
+            
+        </style>
     </head>
     <body>
-        <h1><strong>Registration Form</strong></h1>
-        <form method="get">
-            First Name: <input type="text" name="fname"><br>
-            Last Name: <input type="text" name="lname"><br>
-            Email: <input type="email" name=email" required><br>
-            Password: <input type="password" name="password" min="5"><br>
-            DOB:<input type="date" name="dob"><br>
-            Gender: <br><input type="radio" name="gender" value="Male">Male<br>
-            <input type="radio" name="gender" value="Female">Female<br>
-            <input type="radio" name="gender" value="Others">Others<br>
-            Choose Subjects:<br>
-            <input type="checkbox">C<br>
-            <input type="checkbox">Python<br>
-            <input type="checkbox">Java<br>
-            <input type="checkbox">C++<br>
-            Cars:<br>
-            <select name="cars">
-                <option value="volvo" >Volvo</option>
-                <option value="Benz">Benz</option>
-                <option value="Audi">Audi</option>
-            </select><br>
-            <input type="submit" value="Register">
-            <input type="reset" value="Reset">
+        <h1>Survey Form</h1>
+        <form class="myform" method="get">
+        <div class="forms">
+            <div class="first">
+            <label>Name</label><br />
+            <input type="text" placeholder="Enter your name"  name="username" size="80" style="margin-top:5px;"><br />
+            </div>
+            <div class="nam">
+            <label>Email</label><br />
+            <input type="email" placeholder="Enter your email" name="email" size="80" style="margin-top:5px;"><br />
+            </div>
+            <div class="nam">
+            <label>Age</label><br />
+            <input type="text" placeholder="Enter age" name="age" size="80" style="margin-top:5px;"><br />
+            </div>
+            <div class="nam">
+            <label>Which option best recommends you?</label><br>
+            <select name="role" id="role">
+                <option>Student</option><br>
+                <option>Professional</option><br>
+                <option>intern</option><br>
+                <option>Others</option><br>
+            </select>
+            </div>
+            <div class="nam">
+            <label>Would you recommend this website to a friend?</label><br />
+            <input type="radio" name="Choice" value="Yes">Yes<br />
+            <input type="radio" name="Choice" value="No">No<br />
+            <input type="radio" name="Choice" value="Maybe">Maybe<br />
+            </div>
+            <div class="nam">
+            <label>Languages and frameworks known (check all that apply)</label><br />
+            <input type="checkbox" name="lang" value="C">C<br />
+            <input type="checkbox" name="lang" value="C++">C++<br />
+            <input type="checkbox" name="lang" value="C#">C#<br />
+            <input type="checkbox" name="lang" value="Java">Java<br />
+            <input type="checkbox" name="lang" value="Python">Python<br />
+            <input type="checkbox" name="lang" value="Javascript">Javascript<br />
+            <input type="checkbox" name="lang" value="React">React<br />
+            <input type="checkbox" name="lang" value="Angular">Angular<br />
+            <input type="checkbox" name="lang" value="Django">Django<br />
+            <input type="checkbox" name="lang" value="Spring">Spring<br />
+            </div>
+            <div class="nam">
+            <label>Any comments or suggestions</label>
+            <textarea name="comments" cols="75" rows="4"></textarea>
+            </div>
+            <div class="but">
+            <button name="submit" id="sub" width="100" height="3">Submit</button>
+            </div>
+        </div>
         </form>
     </body>
 </html>
